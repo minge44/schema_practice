@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Baseball Database</title>
+</head>
+
+<body>
+  <form class="" action="/" method="post">
+    <input type="text" name="firstName" value="" placeholder="First Name">
+    <input type="text" name="lastName" value="" placeholder="Last Name">
+
+
+    <button type="submit" name="button">Submit</button>
+  </form>
+
+  <h3>Baseball Players</h3>
+  <ul>
+    {{#players}}
+    <li>First Name: {{firstName}}</li>
+    <li>Last Name: {{lastName}}</li>
+    <br>
+    {{/players}}
+  </ul>
+</body>
+
+</html>
